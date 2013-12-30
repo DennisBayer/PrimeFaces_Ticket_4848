@@ -1,0 +1,25 @@
+/* 
+    Document   : ticket4848
+    Created on : 12.11.2012, 13:39:43
+    Author     : dba
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.panel {
+    background-color: gray;
+    min-height: 100px;  
+}
+
+.fixed {
+    color: green;
+}
+
+.notFixed {
+    color: red;
+}
