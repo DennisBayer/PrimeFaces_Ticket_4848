@@ -15,7 +15,11 @@
             
             <!-- Place component here: id="compToRemove" rendered="#{commonController.visible}" -->
             
-            
+            <p:selectBooleanCheckbox 
+                id="compToRemove" rendered="#{commonController.visible}"
+                value="#{commonController.bool}">  
+                <p:ajax listener="#{commonController.actionListener}" />  
+            </p:selectBooleanCheckbox>
             
         </h:form>
     </h:body>

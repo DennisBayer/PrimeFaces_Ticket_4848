@@ -13,9 +13,13 @@
             <p:commandButton id="cmdButton" value="update" update="@form" actionListener="#{commonController.toggle}" />
             <hr/>
             
-            <!-- Place component here: id="compToRemove" rendered="#{commonController.visible}" -->
+            <!-- Place component here: rendered="#{commonController.visible}" -->
             
-            
+            <p:selectBooleanButton 
+                id="compToRemove" rendered="#{commonController.visible}"
+                value="#{commonController.bool}" onLabel="Yes" offLabel="No" onIcon="ui-icon-check" offIcon="ui-icon-close">  
+                <p:ajax listener="#{commonController.actionListener}" />  
+            </p:selectBooleanButton>
             
         </h:form>
     </h:body>

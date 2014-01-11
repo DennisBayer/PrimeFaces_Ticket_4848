@@ -10,7 +10,22 @@
     </h:head>
     <h:body>
         <h:form id="form">
-            <p:commandButton id="cmdButton" value="update" update="@form" actionListener="#{commonController.toggle}"/>
+            <p:commandButton id="cmdButton" value="update" update="@form" actionListener="#{commonController.toggle}" />
+            <hr/>
+            
+            <p:ajaxStatus style="width:16px;height:16px;" id="ajaxStatusPanel" rendered="#{commonController.visible}">  
+                <f:facet name="start">  
+                    start
+                </f:facet>
+
+                <f:facet name="complete">  
+                    complete
+                </f:facet>  
+            </p:ajaxStatus>  
+           
+            <p:inputText id="testInput">
+                <p:ajax event="blur" />
+            </p:inputText>
         </h:form>
     </h:body>
 </html>

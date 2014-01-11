@@ -16,6 +16,7 @@ import javax.faces.event.ActionEvent;
 @ViewScoped
 public class CommonController {
     private boolean visible = true;
+    private boolean bool = false;
     private String output = "hello";
 
     public boolean isVisible() {
@@ -26,6 +27,14 @@ public class CommonController {
         this.visible = visible;
     }
 
+    public boolean isBool() {
+        return bool;
+    }
+
+    public void setBool(boolean bool) {
+        this.bool = bool;
+    }
+   
     public String getOutput() {
         return output;
     }

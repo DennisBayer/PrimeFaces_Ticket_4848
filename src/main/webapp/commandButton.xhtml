@@ -15,8 +15,10 @@
             
             <!-- Place component here: id="compToRemove" rendered="#{commonController.visible}" -->
             
-            
-            
+            <p:commandButton 
+                id="compToRemove" rendered="#{commonController.visible}"
+                actionListener="#{commonController.actionListener}"
+                value="compToRemove" />
         </h:form>
     </h:body>
 </html>
